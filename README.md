@@ -11,11 +11,11 @@ So here we go!
 
 It can be used easily like: 
 
-> docker run <IMAGE> "./waf --run hello-simulator"
+> docker run "NS3_IMAGE" "./waf --run hello-simulator"
 
 
 Even debugging is possible:
-> docker run -it new_test:ns3 "./waf --run=hello-simulator --command-template=\"gdb %s --args <args>\""
+> docker run -it "NS3_IMAGE" "./waf --run=hello-simulator --command-template=\"gdb %s --args <args>\""
 
 
 Modify this image or provide the source via `-v` to run your own simulations.
