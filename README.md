@@ -15,7 +15,7 @@ It can be used easily like:
 
 
 Even debugging is possible:
-> docker run -it "NS3_IMAGE" "./waf --run=hello-simulator --command-template=\"gdb %s --args <args>\""
+> `docker run -it "NS3_IMAGE" "./waf --run=hello-simulator --command-template=\"gdb %s --args <args> \""`
 
 
 Modify this image or provide the source via `-v` to run your own simulations.
